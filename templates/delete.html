@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ochirish</title>
+</head>
+<body>
+    <h1>tovarni ochirish: {{ product_day.name }}</h1>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">ochirish</button>
+    </form>
+</body>
+</html>

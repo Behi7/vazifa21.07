@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>O'zgartirish</title>
+</head>
+<body>
+    <h1>tovarni ozgartirish: {{ product_day.name }}</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">saqlash</button>
+    </form>
+</body>
+</html>
